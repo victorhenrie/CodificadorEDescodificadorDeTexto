@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__text-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.container__text-input h1 {
+  font-size: 30px;
+  color: #0A3871;
+}
+
+.container__text-input textarea {
+  background-color: transparent;
+  outline: transparent;
+  border: 0;
+  width: 800px;
+  height: 440px;
+  font-size: 26px;
+  color: #0A3871;
+  margin-top: 60px;
+}
+
+.container__text-input textarea::-webkit-input-placeholder {
+  color: #0A3871;
+}
+
+.container__text-input textarea:-ms-input-placeholder {
+  color: #0A3871;
+}
+
+.container__text-input textarea::-ms-input-placeholder {
+  color: #0A3871;
+}
+
+.container__text-input textarea::placeholder {
+  color: #0A3871;
+}
+
+.container__text-input--instructions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+.container__text-input--instructions span {
+  font-size: 12px;
+  color: #495057;
+  margin-left: 8px;
+}
+
+.container__text-input--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__text-input--buttons-button {
+  color: #FFFFFF;
+  width: 340px;
+  height: 60px;
+  border-radius: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.container__text-input--buttons-button.blue {
+  background-color: #0A3871;
+  border: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container__text-input--buttons-button.blue:hover {
+  background-color: #020a13;
+}
+
+.container__text-input--buttons-button.gray {
+  background-color: #D8DFE8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container__text-input--buttons-button.gray:hover {
+  background-color: white;
+}
+
+.container__text-output {
+  max-width: 400px;
+  max-height: 680px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container__text-output h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #495057;
+  text-align: center;
+  width: 336px;
+  margin-top: 32px;
+}
+
+.container__text-output p {
+  font-size: 16px;
+  width: 336px;
+  text-align: center;
+  margin-top: 16px;
+}
+/*# sourceMappingURL=styles.css.map */
