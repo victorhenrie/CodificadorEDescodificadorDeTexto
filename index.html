@@ -27,14 +27,19 @@
             </div>
         </div>
         <div class="container__text-output">
-            <div id="text-back-face" class="container__text-output--face front-face">
+            <div id="text-front-face" class="container__text-output--face front-face">
                 <img src="./assets/image/avatar.png" alt="boneco segurando uma lupa para olhar para um diamante">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <!-- <div class="container__text-output--face back-face">
-                <p id="text-back-face">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div> -->
+            <div class="container__text-output--face back-face">
+                <div id="text-face">
+                    <p id="text-back-face">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div>
+                    <input id="copy-buttom" class="container__text-output--face-button" type="button" value="Copiar">
+                </div>
+            </div>
         </div>
     </section>
     <script src="./assets/script/script.js"></script>

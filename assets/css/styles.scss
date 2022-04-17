@@ -50,7 +50,6 @@
         }
 
         &--buttons-button {
-            color: $white;
             width: 340px;
             height: 60px;
             border-radius: 24px;
@@ -59,6 +58,7 @@
 
             &.blue {
                 background-color: $dark-blue;
+                color: $white;
                 border: 0;
                 transition: 1s;
                 &:hover {
@@ -80,7 +80,6 @@
     &__text-output {
         width: 400px;
         height: 680px;
-        display: flex;
         margin: auto;
         
 
@@ -90,29 +89,18 @@
             border-radius: 32px;
             display: flex;
             flex-direction: column;
-            // position: absolute;
-            // backface-visibility: hidden;
-            // transition: all .5s;
-            // transform-style: preserve-3d;
             background-color: $white;
-            
-            &.front-face {
-                justify-content: center;
-                align-items: center;
+            justify-content: center;
+            align-items: center;
+
+            &.front-face{
+                display: flex;
+            }
+
+            &.back-face{
+                display: none;
             }
         }
-
-        // & .back-face {
-        //     transform: rotateY(180deg);
-        // }
-
-        // &:hover .back-face{
-        //     transform: rotateY(0deg)
-        // }
-
-        // &:hover .front-face{
-        //     transform: rotateY(-180deg)
-        // }
 
         & h2{
             font-size: 24px;
@@ -129,12 +117,31 @@
             text-align: center;
             margin-top: 16px;
         }
+
+        &--face-button{
+            color: $dark-blue;
+            width: 340px;
+            height: 60px;
+            border-radius: 24px;
+            font-size: 14px;
+            background-color: $white;
+            border: 1px solid $dark-blue;
+            cursor: pointer;
+            margin: auto;
+            transition: 1s;
+            &:hover {
+                background-color: $ligt-blue;
+            }
+        }
     }
 }
 
-#text-face {
+#text-back-face {
     font-size: 26px;
     color: $dark-blue;
     text-align: justify;
     margin: 50px 50px;
+    width: 300px;
+    height: 470px;
+    word-break: break-word;
 }
