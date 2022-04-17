@@ -36,7 +36,7 @@ function decryption(text) {
                 newText += space[0];
                 break;
             } else if (text[i] == alphabet[f]) {
-                var nova = (f - 15) % 51;
+                var nova = (f - 15);
                 if (nova < 0){
                     nova = 51 + (nova);
                 }
