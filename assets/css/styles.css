@@ -256,7 +256,7 @@ table {
             flex-direction: column;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .container__text-input {
     width: 90vw;
@@ -270,6 +270,7 @@ table {
   .container__text-output {
     width: 100%;
     height: 300px;
+    margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -298,6 +299,9 @@ table {
 }
 
 @media (max-width: 520px) {
+  .container {
+    margin: 10px auto;
+  }
   .container__text-input h1 {
     font-size: 23px;
   }

@@ -154,7 +154,7 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
+    margin: 10px auto;
 
     &__text-input {
         width: 90vw;
@@ -170,6 +170,7 @@
     &__text-output {
         width: 100%;
         height: 300px;
+        margin: 10px auto;
         display: flex;
         justify-content: center;
 
@@ -199,7 +200,7 @@
 
 @media (max-width: 520px){
     .container {
-    
+        margin: 10px auto;
         &__text-input {
     
             & h1{
