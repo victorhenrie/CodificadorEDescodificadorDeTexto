@@ -9,18 +9,18 @@ var copyText = '';
 
 
 function crypto(text) {
-    var alphabet = [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     var newText = "";
     for (var i = 0; i < text.length; i++) {
         for (var f = 0; f < alphabet.length; f++) {
-             if (text[i] == alphabet[52]){
+             if (text[i] == alphabet[51]){
                 newText += "Σ";
                 break;
             } else if (text[i] == alphabet[f]) {
-                var nova = (f + 15) % 52;
+                var nova = (f + 15) % 51;
                 newText += alphabet[nova];
                 break;
-            } else if (f == 52) {
+            } else if (f == 51) {
                 newText += text[i];
                 break;
             }
@@ -40,11 +40,11 @@ function decryption(text) {
             } else if (text[i] == alphabet[f]) {
                 var nova = (f - 15);
                 if (nova < 0){
-                    nova = 52 + (nova);
+                    nova = 51 + (nova);
                 }
                 newText += alphabet[nova];
                 break;
-            } else if (f == 52) {
+            } else if (f == 51) {
                 newText += text[i];
                 break;
             }

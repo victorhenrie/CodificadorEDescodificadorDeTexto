@@ -142,6 +142,7 @@ table {
 }
 
 .container__text-input--buttons-button.blue {
+  width: 45%;
   background-color: #0A3871;
   color: #FFFFFF;
   border: 0;
@@ -154,6 +155,7 @@ table {
 }
 
 .container__text-input--buttons-button.gray {
+  width: 45%;
   background-color: #D8DFE8;
   color: #0A3871;
   border: 1px solid #0A3871;
@@ -243,5 +245,89 @@ table {
   width: 300px;
   height: 470px;
   word-break: break-word;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .container__text-input {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+  }
+  .container__text-input textarea {
+    width: 100%;
+    height: 400px;
+  }
+  .container__text-output {
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__text-output--face {
+    width: 90%;
+  }
+  .container__text-output--face img {
+    display: none;
+  }
+  .container__text-output h2 {
+    margin-top: 0px;
+  }
+  #text-back-face {
+    font-size: 26px;
+    color: #0A3871;
+    text-align: justify;
+    margin: 0;
+    width: 80vw;
+    height: 200px;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 520px) {
+  .container__text-input h1 {
+    font-size: 23px;
+  }
+  .container__text-input textarea {
+    height: 300px;
+    font-size: 19px;
+    margin-top: 28px;
+  }
+  .container__text-input--buttons-button {
+    width: 200px;
+    height: 50px;
+  }
+  .container__text-output h2 {
+    font-size: 23px;
+  }
+  .container__text-output p {
+    font-size: 16px;
+  }
+  .container__text-output--face-button {
+    width: 200px;
+    height: 50px;
+  }
+  #text-back-face {
+    font-size: 26px;
+    color: #0A3871;
+    text-align: justify;
+    margin: 0;
+    width: 80vw;
+    height: 200px;
+    word-break: break-word;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -57,6 +57,7 @@
             cursor: pointer;
 
             &.blue {
+                width: 45%;
                 background-color: $dark-blue;
                 color: $white;
                 border: 0;
@@ -67,6 +68,7 @@
             }
 
             &.gray {
+                width: 45%;
                 background-color: $ligt-blue;
                 color: $dark-blue;
                 border: 1px solid $dark-blue;
@@ -144,4 +146,102 @@
     width: 300px;
     height: 470px;
     word-break: break-word;
+    overflow-y: auto;
 }
+
+@media (max-width: 1024px){
+.container {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    &__text-input {
+        width: 90vw;
+        height: auto;
+        margin:  auto;
+
+        & textarea {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    &__text-output {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+
+        &--face {
+            width: 90%;
+
+            & img {
+                display: none;
+            }
+        }
+
+        & h2 {
+            margin-top: 0px;
+        }
+    }
+}
+#text-back-face {
+    font-size: 26px;
+    color: $dark-blue;
+    text-align: justify;
+    margin: 0;
+    width: 80vw;
+    height: 200px;
+    word-break: break-word;
+}
+}
+
+@media (max-width: 520px){
+    .container {
+    
+        &__text-input {
+    
+            & h1{
+                font-size: 23px;
+            }
+    
+            & textarea {
+                height: 300px;
+                font-size: 19px;
+                margin-top: 28px;
+            }
+    
+            &--buttons-button {
+                width: 200px;
+                height: 50px;
+            }
+        }
+    
+        &__text-output {
+    
+    
+            & h2 {
+                font-size: 23px;
+            }
+    
+            & p{
+                font-size: 16px;
+            }
+    
+            &--face-button{
+                width: 200px;
+                height: 50px;
+            }
+        }
+    }
+    #text-back-face {
+        font-size: 26px;
+        color: $dark-blue;
+        text-align: justify;
+        margin: 0;
+        width: 80vw;
+        height: 200px;
+        word-break: break-word;
+    }
+    }
