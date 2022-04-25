@@ -171,6 +171,8 @@ table {
   width: 400px;
   height: 680px;
   margin: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .container__text-output--face {
@@ -254,8 +256,8 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 15px 0;
     margin: 0 auto;
   }
@@ -280,7 +282,8 @@ table {
             justify-content: center;
   }
   .container__text-output--face {
-    width: 90%;
+    width: 90vw;
+    height: 300px;
   }
   .container__text-output--face img {
     display: none;
@@ -292,9 +295,9 @@ table {
     font-size: 26px;
     color: #0A3871;
     text-align: justify;
-    margin: 0;
+    margin: 0 0 10px;
     width: 80vw;
-    height: 200px;
+    height: 160px;
     word-break: break-word;
   }
 }
@@ -332,7 +335,7 @@ table {
     text-align: justify;
     margin: 0;
     width: 80vw;
-    height: 200px;
+    height: 150px;
     word-break: break-word;
   }
 }
